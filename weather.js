@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('form').onsubmit = function() {
         var q = document.querySelector('#location').value;
         var api_key = '16776569ce554b44914135907212911';
-        fetch(`https://api.weatherapi.com/v1/current.json?key={api_key}&q=${q}&aqi=no`)
+        fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${q}&aqi=no`)
         .then(response => response.json())
         .then(data => {
             if(data != undefined){
