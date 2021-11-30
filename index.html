@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="./weather.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="text-light">
+    <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+    <div class="row d-flex justify-content-center px-3">
+        <div class="card">
+            <!-- Getting data from users -->
+            <form action="" class="form-group">
+                <input type="text" id="location" class="form-control" placeholder="Enter Location">
+                <input type="submit" class="btn btn-primary btn-sm" id="submit">
+            </form>
+            <!-- displaying result to user -->
+            <h2 class="ml-auto mr-4 mt-3 mb-0" id="loc">City</h2>
+            <p class="ml-auto mr-4 mb-0 med-font" id="cond">Weather</p>
+            <h6 class="ml-auto mr-4 large-font" id="tempc">Temp&#176;</h6>
+            <p class="ml-auto mr-4 sm-font" id="feel">Feels Like</p>
+            <p class="time-font mb-0 ml-4 mt-auto" id="time">Time</p>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
